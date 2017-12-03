@@ -10,70 +10,69 @@
 
     <Button
         android:id="@+id/notips"
+        android:layout_width="143dp"
+        android:layout_height="74dp"
         android:onClick="noTipsClick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Не округлять"
+        app:layout_constraintHorizontal_bias="0.996"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tips15"/>
+        tools:layout_editor_absoluteY="118dp"/>
 
     <Button
         android:id="@+id/tipsRound"
+        android:layout_width="383dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="68dp"
         android:onClick="tipsRoundClick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
 
         android:text="Округлить"
+        app:layout_constraintHorizontal_bias="0.007"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/tips10"
+        android:layout_width="119dp"
+        android:layout_height="74dp"
         android:onClick="tips10Click"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:text="Округление+10%"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tipsRound"/>
 
     <Button
         android:id="@+id/tips15"
+        android:layout_width="121dp"
+        android:layout_height="74dp"
         android:onClick="tips15Click"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Округление+15%"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tips10"/>
+        tools:layout_editor_absoluteY="118dp"/>
 
     <Button
         android:id="@+id/acceptAndReturn"
-        android:layout_width="189dp"
-        android:layout_height="71dp"
-        android:layout_marginRight="4dp"
+        android:layout_width="190dp"
+        android:layout_height="72dp"
         android:background="@color/colorAccept"
-        android:textColor="@color/white"
         android:onClick="acceptAndReturn"
         android:text="Применить"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
     <Button
         android:id="@+id/cancelAndBack"
-        android:layout_width="181dp"
-        android:layout_height="70dp"
+        android:layout_width="190dp"
+        android:layout_height="72dp"
 
-        android:background="@color/white"
-        android:layout_marginBottom="16dp"
         android:layout_marginHorizontal="0dp"
         android:layout_marginVertical="0dp"
+        android:background="@color/white"
         android:onClick="cancelAndBackClick"
         android:text="Отмена"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,14 +115,10 @@
         android:id="@+id/checkSumToPay"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
-        android:layout_marginLeft="212dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
         android:text="Сумма к оплате: "
         android:textColor="@color/white"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkSumNumber"
-        app:layout_constraintTop_toTopOf="parent"/>
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="390dp"/>
 
     <TextView
         android:id="@+id/checkSumToPayNumber"
