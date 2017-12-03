@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/EvotorHackaton.iml" filepath="$PROJECT_DIR$/.idea/EvotorHackaton.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mkga.iml" filepath="$PROJECT_DIR$/mkga.iml" />
     </modules>
   </component>
 </project>
