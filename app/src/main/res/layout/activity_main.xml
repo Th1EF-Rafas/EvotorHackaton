@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android.mkga.MainActivity">
+    tools:context="com.android.mkga.MainActivity"
+    android:background="@color/colorDefault">
 
     <Button
         android:id="@+id/notips"
@@ -13,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/notips"
+        android:text="Не округлять"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tips15"/>
@@ -24,7 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
-        android:text="@string/checkrounded"
+
+        android:text="Округлить"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -35,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="@string/check_10"
+        android:text="Округление+10%"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tipsRound"/>
@@ -46,22 +48,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/check_15"
+        android:text="Округление+15%"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tips10"/>
 
     <Button
         android:id="@+id/acceptAndReturn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_width="189dp"
+        android:layout_height="71dp"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorAccept"
+        android:textColor="@color/white"
         android:onClick="acceptAndReturn"
-        android:text="Подтвердить"
+        android:text="Применить"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/cancelAndBack"
+        android:layout_width="181dp"
+        android:layout_height="70dp"
+
+        android:background="@color/white"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginVertical="0dp"
+        android:onClick="cancelAndBackClick"
+        android:text="Отмена"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/acceptAndReturn"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -76,6 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="16dp"
+        android:textColor="@color/white"
         android:text="Сумма по чеку: "
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -89,6 +107,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="16dp"
         android:text="282.41"
+        android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toEndOf="@+id/checkSumText"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -101,6 +120,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:text="Сумма к оплате: "
+        android:textColor="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toEndOf="@+id/checkSumNumber"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -111,6 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:textColor="@color/white"
         android:text=" "
         app:layout_constraintStart_toEndOf="@+id/checkSumToPay"
         app:layout_constraintTop_toTopOf="parent"/>

@@ -41,7 +41,7 @@
             android:enabled="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_round"
-            android:label="MakeYselfGreatAgain">
+            android:label="MakeKassirshaGreatAgain">
 
             <intent-filter android:priority="20">
                 <category android:name="android.intent.category.DEFAULT" />
