@@ -9,6 +9,7 @@
 
     <Button
         android:id="@+id/notips"
+        android:onClick="noTipsClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -19,6 +20,7 @@
 
     <Button
         android:id="@+id/tipsRound"
+        android:onClick="tipsRoundClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
@@ -29,6 +31,7 @@
 
     <Button
         android:id="@+id/tips10"
+        android:onClick="tips10Click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -39,6 +42,7 @@
 
     <Button
         android:id="@+id/tips15"
+        android:onClick="tips15Click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -66,7 +70,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/checkSumNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="148dp"
@@ -86,11 +90,11 @@
         android:layout_marginTop="16dp"
         android:text="Сумма к оплате: "
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/checkSumNumber"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/checkSumToPayNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
