@@ -7,10 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.android.mkga.MainActivity">
 
-
-
-
-
     <Button
         android:id="@+id/notips"
         android:layout_width="wrap_content"
@@ -56,25 +52,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="300dp"
-        app:layout_constraintGuide_begin="20dp"/>
+        app:layout_constraintGuide_begin="60dp"/>
+
+    <TextView
+        android:id="@+id/checkSumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Сумма по чеку: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:text="TextView"
+        android:layout_marginLeft="148dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:text="282.41"
         app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteY="29dp"/>
+        app:layout_constraintStart_toEndOf="@+id/checkSumText"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/checkSumToPay"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="212dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Сумма к оплате: "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="TextView"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="222dp"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=" "
+        app:layout_constraintStart_toEndOf="@+id/checkSumToPay"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </android.support.constraint.ConstraintLayout>
