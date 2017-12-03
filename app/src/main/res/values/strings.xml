@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">mkga</string>
+    <string name="notips">NoTips</string>
+    <string name="checkrounded">CheckRounded</string>
+    <string name="check_10">Check+10%</string>
+    <string name="check_15">Check+15%</string>
 </resources>

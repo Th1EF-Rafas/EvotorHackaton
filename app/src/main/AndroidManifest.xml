@@ -42,9 +42,6 @@
             android:exported="true"
             android:icon="@mipmap/ic_launcher_round"
             android:label="MakeYselfGreatAgain">
-            <meta-data
-                android:name="ru.evotor.sales_screen.BACKGROUND_COLOR"
-                android:value="#133788" />
 
             <intent-filter android:priority="20">
                 <category android:name="android.intent.category.DEFAULT" />
